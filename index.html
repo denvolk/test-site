@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css">
+  <link href="/css/style.css" media="all" rel="stylesheet" type="text/css">
+  <title>Denis Volkhin</title>
+</head>
+<body>
+<button onclick="scrollToTop()" id="scroller"><img src="/pics/ArrowUp.png"></button>
+<div class="header">
+  <nav class="menu">
+    <ul>
+      <li><a href="javascript:scrollTo('home')"><span id="span-menu-home">Home</span></a></li>
+      <li><a href="javascript:scrollTo('about')"><span id="span-menu-about">About me</span></a></li>
+      <li><a href="javascript:scrollTo('skills')"><span id="span-menu-skills">Skills</span></a></li>
+      <li><a href="javascript:scrollTo('portfolio')"><span id="span-menu-portfolio">Portfolio</span></a></li>
+      <li><a href="javascript:scrollTo('contacts')"><span id="span-menu-contacts">Contacts</span></a></li>
+    </ul>
+  </nav>
+</div>
+<hr class="hr-line"/>
+<div class="main">
+  <section class="info-panel">
+    <ul>
+      <li class="name"><span id="span-first-name">Denis</span><span id="span-last-name">Volkhin</span></li>
+      <li class="info"><span id="span-info-first">Intern Frontend Developer</span><span id="span-info-second">23 years old, Saint-Petersburg</span></li>
+      <li class="lang-selector"><a onclick="changeLanguage('ru')" href="#ru"><span id="ruL">RU</span></a> | <a
+        onclick="changeLanguage('eng')" href="#eng"><span id="engL">ENG</span></a></li>
+    </ul>
+  </section>
+  <section class="photo">
+    <img src="/pics/BlankPhoto.png" alt="Denis Volkhin">
+  </section>
+  <section class="about">
+    <h1><span id="span-about">About me</span></h1><br>
+    <p class="p1"><span id="span-about-p1-first">Hi, I'm Denis – Intern Frontend Developer from Saint-Petersburg.</span>
+      <span id="span-about-p1-second">I'm interested in frontend development and everything connected with it.</span>
+    </p>
+    <p class="p2"><span id="span-about-p2-first">I'm studying at courses "Program engineering"</span>
+      <span id="span-about-p2-second">in IT-Academy.</span>
+    </p>
+    <p class="p3"><span id="span-about-p3-first">Ready to implement excellent projects</span>
+      <span id="span-about-p3-second">with wonderful people.</span>
+    </p>
+  </section>
+  <section class="skills">
+    <h1><span id="span-skills">Skills</span></h1>
+    <p><span id="span-skills-p">I work in such programs as</span></p>
+    <div class="programs-pics">
+      <a href="https://www.jetbrains.com/webstorm/"><img
+        src="https://resources.jetbrains.com/storage/products/company/brand/logos/WebStorm_icon.svg"
+        alt="WebStorm logo."></a>
+      <a href="https://www.postman.com/"><img
+        src="https://www.postman.com/_mk-www-v6.103.0/assets/logos/postman-logo-stacked.svg" alt="Postman logo."></a>
+      <a href="https://www.docker.com/"><img
+        src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" alt="Docker logo."></a>
+      <a href="https://github.com/"><img src="/pics/GitHubDark.png" alt="GitHub."></a>
+    </div>
+    <div class="programs-name">
+      <ul>
+        <li class="PS">WebStorm</li>
+        <li class="AI">Postman</li>
+        <li class="AAE">Docker</li>
+        <li class="Figma">GitHub</li>
+      </ul>
+    </div>
+    <!--<div class="rating">
+      <div class="ps-rating">
+        <img src="../pics/Star_bl.png" alt="black star">
+        <img src="../pics/Star_bl.png" alt="black star">
+        <img src="../pics/Star_bl.png" alt="black star">
+        <img src="../pics/Star_bl.png" alt="black star">
+        <img src="../pics/Star_wh.png" alt="white star">
+      </div>
+      <div class="ai-rating">
+        <img src="../pics/Star_bl.png" alt="black star">
+        <img src="../pics/Star_bl.png" alt="black star">
+        <img src="../pics/Star_bl.png" alt="black star">
+        <img src="../pics/Star_wh.png" alt="white star">
+        <img src="../pics/Star_wh.png" alt="white star">
+      </div>
+      <div class="aae-rating">
+        <img src="../pics/Star_bl.png" alt="black star">
+        <img src="../pics/Star_bl.png" alt="black star">
+        <img src="../pics/Star_bl.png" alt="black star">
+        <img src="../pics/Star_bl.png" alt="black star">
+        <img src="../pics/Star_wh.png" alt="white star">
+      </div>
+      <div class="figma-rating">
+        <img src="../pics/Star_bl.png" alt="black star">
+        <img src="../pics/Star_bl.png" alt="black star">
+        <img src="../pics/Star_bl.png" alt="black star">
+        <img src="../pics/Star_bl.png" alt="black star">
+        <img src="../pics/Star_wh.png" alt="white star">
+      </div>
+    </div>-->
+  </section>
+  <section class="portfolio">
+    <h1><span id="span-portfolio">Portfolio</span></h1>
+    <img class="portf-pic1" src="/pics/BlankPhoto.png" alt="Portfolio1"><br>
+    <a href="#">Site1 - Homepage</a><br>
+    <img class="portf-pic2" src="/pics/BlankPhoto.png" alt="Portfolio2"><br>
+    <a id="rb-store" href="#">site2 - Homepage</a><br>
+    <img class="portf-pic3" src="/pics/BlankPhoto.png" alt="Portfolio3"><br>
+    <a href="#">site3 - Homepage</a>
+  </section>
+</div>
+<div class="footer">
+  <section class="contacts">
+    <h1><span id="span-contacts">Contacts</span></h1>
+    <p><span id="span-contacts-p-first">Want to know more or just chat?</span>
+      <span id="span-contacts-p-second">You are welcome!</span>
+    </p>
+    <button><span id="span-button">Send message</span></button>
+    <div class="contact-pics">
+      <a href="https://vk.com/denv0lk" target="_blank" rel="noopener noreferrer"><img src="/pics/VKBlack.svg"
+                                                                                      alt="VK"
+                                                                                      style="height: 48px;"></a>
+      <a href="https://discordapp.com/users/211199388993716224" target="_blank" rel="noopener noreferrer"><img
+        src="/pics/DiscordBlack.svg" alt="Discord" style="height: 48px;"></a>
+      <a href="https://github.com/denvolk" target="_blank" rel="noopener noreferrer"><img src="/pics/GitHubDark.png"
+                                                                                          alt="GitHub"
+                                                                                          style="height: 48px;"></a>
+    </div>
+  </section>
+  <p class="footer-info"><span id="span-footer-first">Add me on</span>
+    <span id="span-footer-second">VK, Discord, GitHub</span>
+  </p>
+</div>
+<script type="text/javascript" src="/js/myScript.js"></script>
+</body>
+</html>
