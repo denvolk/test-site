@@ -75,7 +75,7 @@ body img  {
   top: 0;
   background-color: #ffffff;
   scroll-margin-top: 120px;
-  z-index: 1;
+  z-index: 2;
   height: 72px;
   /*transform: translateZ(0);
   -webkit-transform: translateZ(0);*/
