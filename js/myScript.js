@@ -9,7 +9,7 @@ let scrBtn = document.getElementById("scroller");
 
 let text;
 
-fetch("http://localhost:63342/test-site/json/text.json")
+fetch("https://raw.githubusercontent.com/denvolk/test-site/master/json/text.json")
     .then(response => response.json())
     .then(data => text = data);
 
