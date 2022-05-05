@@ -9,7 +9,7 @@ let scrBtn = document.getElementById("scroller");
 
 let text;
 
-fetch("https://raw.githubusercontent.com/denvolk/test-site/master/json/text.json")
+fetch("http://denvolk.github.io/test-site/json/text.json")
     .then(response => response.json())
     .then(data => text = data);
 
@@ -208,7 +208,7 @@ function scrollTo(point) {
 window.onscroll = function ()   {scrVisibility()};
 
 function scrVisibility()  {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)    {
+    if (document.body.scrollTop > 20)    {
         scrBtn.style.display = "block";
         //document.getElementsByClassName("header")[0].style.position = "sticky";
     }
