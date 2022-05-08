@@ -5,7 +5,7 @@ let selector_eng = document.getElementById("engL");
 
 let header_menu = document.getElementsByClassName("menu")[0];
 
-let scrBtn = document.getElementById("scroller");
+//let scrBtn = document.getElementById("scroller");
 
 let text;
 
@@ -205,7 +205,7 @@ function scrollTo(point) {
     }
 }
 
-window.onscroll = function ()   {scrVisibility()};
+/*window.onscroll = function ()   {scrVisibility()};
 
 function scrVisibility()  {
     if (document.body.scrollTop > 20)    {
@@ -216,7 +216,7 @@ function scrVisibility()  {
         scrBtn.style.display = "none";
         //document.getElementsByClassName("header")[0].style.position = "static";
     }
-}
+}*/
 
 function scrollToTop()  {
     //document.querySelector(".header").scrollIntoView({behavior: "smooth"});
